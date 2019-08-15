@@ -1,1 +1,17 @@
 // Mixins in here
+.flex-box(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.buttoned(@bg-c:teal, @border-rad:10px, @width:70%){
+    padding: 4% 8%;
+    background-color: @bg-c;
+    border-radius: @border-rad;
+    text-align: center;
+    color:white;
+    font-size: 1.75em;
+    width:@width;
+    // margin: 0 auto;
+
+}

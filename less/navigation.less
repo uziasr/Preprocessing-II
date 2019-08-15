@@ -1,1 +1,22 @@
 // Navigation Styles here
+div.dash{
+    width:@nav-width;
+    border-bottom: 2px dashed lightgray;
+    margin:0 auto;
+    div.nav-bar{
+        width:90%;
+        margin:2% auto;
+        .flex-box( space-between, center);
+        nav{
+            width:40%;
+            .flex-box(space-evenly,center);
+        }
+        a{
+            font-size: @nav-font-s;
+            text-decoration: none;
+            color:black;
+            // display:flex;
+            // justify-content: space-evenly;
+        }
+    }
+}
