@@ -1,1 +1,35 @@
 // Navigation Styles here
+div.dash{
+    width:@nav-width;
+    border-bottom: 2px dashed lightgray;
+    margin:0 auto;
+    div.nav-bar{
+        width:90%;
+        margin:2% auto;
+        @media @mobile{
+            .flex-box(space-between, center, @direction:column);
+        }
+        .flex-box(space-between, center);
+        h1{
+            @media @mobile{
+                font-size:3em;
+                margin:5% 0;
+            }
+        }
+
+        nav{
+            width:50%;
+            .flex-box(space-evenly,center);
+            @media @mobile{
+                width:100%;
+            }
+        }
+        a{
+            font-size: @nav-font-s;
+            text-decoration: none;
+            color:black;
+            // display:flex;
+            // justify-content: space-evenly;
+        }
+    }
+}
