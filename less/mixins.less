@@ -1,6 +1,7 @@
 // Mixins in here
-.flex-box(@justify, @align){
+.flex-box(@justify, @align, @direction:row){
     display:flex;
+    flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }

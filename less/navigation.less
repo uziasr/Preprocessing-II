@@ -6,10 +6,23 @@ div.dash{
     div.nav-bar{
         width:90%;
         margin:2% auto;
-        .flex-box( space-between, center);
+        @media @mobile{
+            .flex-box(space-between, center, @direction:column);
+        }
+        .flex-box(space-between, center);
+        h1{
+            @media @mobile{
+                font-size:3em;
+                margin:5% 0;
+            }
+        }
+
         nav{
-            width:40%;
+            width:50%;
             .flex-box(space-evenly,center);
+            @media @mobile{
+                width:100%;
+            }
         }
         a{
             font-size: @nav-font-s;
